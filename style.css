@@ -1,0 +1,196 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fffafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #f48fb1, #e91e63);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffe3ec;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(120deg, #f8bbd0, #f48fb1);
+  color: white;
+}
+
+.hero .btn {
+  background: white;
+  color: #e91e63;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background: #ffe3ec;
+}
+
+/* PRODUK */
+.produk {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.produk h2 {
+  color: #e91e63;
+  margin-bottom: 15px;
+}
+
+.produk-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.produk-item {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+}
+
+.produk-item img {
+  width: 100%;
+  border-radius: 10px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.produk-item h3 {
+  margin: 10px 0 5px;
+}
+
+.produk-item p {
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.produk-item button {
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.produk-item button:hover {
+  background: #c2185b;
+}
+
+/* KERANJANG */
+.keranjang {
+  width: 90%;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.keranjang-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.btn,
+.btn-secondary {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn {
+  background: #e91e63;
+  color: white;
+}
+
+.btn:hover {
+  background: #d81b60;
+}
+
+.btn-secondary {
+  background: #f8bbd0;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #f48fb1;
+}
+
+/* CHECKOUT */
+.checkout {
+  width: 90%;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkout input,
+.checkout textarea,
+.checkout select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+  background: #f8bbd0;
+  color: #444;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}

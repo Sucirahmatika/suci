@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toko Kosmetik Suci</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>💄 Toko Kosmetik Suci</h1>
+    <nav>
+      <a href="#produk">Produk</a>
+      <a href="#keranjang">Keranjang</a>
+      <a href="#tentang">Tentang</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Temukan Kecantikanmu Bersama Kami 💋</h2>
+    <p>Produk kosmetik berkualitas, harga bersahabat, hasil memukau.</p>
+    <a href="#produk" class="btn">Belanja Sekarang</a>
+  </section>
+
+  <main>
+    <section id="produk" class="produk">
+      <h2>🛍️ Daftar Produk</h2>
+      <div id="daftar-produk" class="produk-list"></div>
+    </section>
+
+    <section id="keranjang" class="keranjang">
+      <h2>👜 Keranjang Belanja</h2>
+      <div id="keranjang-item"></div>
+      <div class="total">
+        <p>Total: <span id="totalHarga">Rp 0</span></p>
+        <button id="checkoutBtn" class="btn">Lanjut Pembayaran</button>
+        <button id="clearBtn" class="btn-secondary">Kosongkan</button>
+      </div>
+    </section>
+
+    <section id="checkout" class="checkout">
+      <h2>💌 Ringkasan Pesanan</h2>
+      <form id="checkoutForm">
+        <label>Nama Lengkap:</label>
+        <input type="text" id="nama" required />
+
+        <label>No. Telepon:</label>
+        <input type="tel" id="telepon" required />
+
+        <label>Alamat Pengiriman:</label>
+        <textarea id="alamat" required></textarea>
+
+        <label>Metode Pembayaran:</label>
+        <select id="metode">
+          <option value="COD">🚚 COD (Bayar di Tempat)</option>
+        </select>
+
+        <button type="submit" class="btn">Konfirmasi Pesanan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="tentang">
+    <p>© 2025 Toko Kosmetik Suci — Dibuat dengan 💖 oleh Tim Developer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
